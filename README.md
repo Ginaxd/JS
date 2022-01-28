@@ -1,2 +1,2 @@
 # JS
- Introducción a js
+ introducción a JS
