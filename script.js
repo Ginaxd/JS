@@ -37,7 +37,8 @@ variable=true;
 const numero=20;
 console.log(numero =="20"); //=== comparar el valor y el tipo de dato, = para asignar un valor, == para comparar el valor
 */
-let edad = 20;
+
+/*let edad = 20;
 //condición ? ejecuta un pedazo de código(función etc.) : seria el else
 edad > 18 ? console.log("es mayor de edad") : console.log("es menor de edad");
 
@@ -49,7 +50,26 @@ for(let indice = 0; indice < 10; indice++){
     }
     console.log("otro código");
  //console.log(`El valor del indice es= ${indice}`);
-}
+}*/
+
+const arreglo = ["Jesus", "Juan", "María","Ramón"];
+console.log("arreglo =>", arreglo);
+
+//console.log(arreglo[2]); //para imprimir el dato en una posición especifica
+
+//for(let indice = 0; indice < arreglo.length; indice++){
+    //console.log(`El nombre de la persona es ${arreglo[indice]}`);
+
+//}
+
+/*arreglo.forEach((nombre) =>
+console.log(`El nombre de la persona es ${nombre}`));*/
+
+/*let contador = 0;
+while( contador < 1000){
+    console.log(contador);
+    contador = contador +1;
+}*/
 
 
 
