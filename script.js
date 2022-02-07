@@ -52,8 +52,8 @@ for(let indice = 0; indice < 10; indice++){
  //console.log(`El valor del indice es= ${indice}`);
 }*/
 
-const arreglo = ["Jesus", "Juan", "María","Ramón"];
-console.log("arreglo =>", arreglo);
+//const arreglo = ["Jesus", "Juan", "María","Ramón"];
+//console.log("arreglo =>", arreglo);
 
 //console.log(arreglo[2]); //para imprimir el dato en una posición especifica
 
@@ -71,6 +71,156 @@ while( contador < 1000){
     contador = contador +1;
 }*/
 
+//CREANDO UNA FUNCIÓN (PEDASO DE CÓDIGO ENCAPSULACIÓN)
+function Saludar(nombre, apellido){
+    console.log(`Hola ${nombre} ${apellido}, ¿como estas` );
+}
+//MANDAMOS A LLAMAR LA FUNCIÓN PARA QUE SE IMPRIMA EN CONSOLA
+Saludar("Mariana","Hernandez");
+
+//CREANDO 2 OBJETOS DE TIPO PERSONA
+const persona1 ={
+    nombre: "Georgina",
+    apellido: "Velasco",
+    edad: 15,
+};
+
+const persona2 ={
+    nombre: "Felicitas",
+    apellido: "Velasco",
+    edad: 50,
+};
+
+const arregloPersonas =[persona1,persona2];
+
+//NUEVA FORMA DE HACER UNA FUNCIÓN LA CUAL ES DE LA NUEVA ESCUELA 
+
+const admitirPaso = (persona) =>{
+    if(persona.edad >= 18){
+        console.log(`Puedes pasar ${persona.nombre} ${persona.apellido}`);
+    
+    }else{
+        console.log(`No puedes pasar ${persona.nombre} ${persona.apellido}`);
+    }
+
+};
+ arregloPersonas.forEach((persona)=>{
+     admitirPaso(persona);
+
+ });
+//admitirPaso(persona1);
+//admitirPaso(persona2);
+
+function alerta(){
+    alert("Bienvenida a la pagina padawan");
+}
+
+const esMayor = (edad) =>{
+    if(edad >= 18){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(esMayor(persona1.edad));
+
+//EJERCICIOS
+
+const ejercicio1 = [ 3, 100, 85, 64, 46, 39, 40, 30, 20, 24, 25, 6, 10, 54, 82, 71, 67, 77, 17, 29,
+    19, 88, 456, 13, 23, 24, 15];
+
+const numeroPrimo = (numero) =>{
+    let cont = 0;
+    for(let indice = 1; indice <= numero; indice++){
+        if(numero%indice == 0){ // % resto de la división entre numero e indice
+         cont = cont+1;
+        }
+    }
+   if(cont <= 2){
+    console.log(numero);
+   }
+   
+    
+};
+   
+
+ejercicio1.forEach((numero) =>{
+    numeroPrimo(numero);
+});
+
+
+
+// EJERCICO 2
+/*
+const ejercicio2 = [
+    {
+      nombre: "Gabriel",
+      edad: 22,
+      esFamiliar: false,
+    },
+    {
+      nombre: "Jaime",
+      edad: 15,
+      esFamiliar: true,
+    },
+    {
+      nombre: "María",
+      edad: 18,
+      esFamiliar: true,
+    },
+    {
+      nombre: "Angel",
+      edad: 19,
+      esFamiliar: true,
+    },
+    {
+      nombre: "Fer",
+      edad: 18,
+      esFamiliar: true,
+    },
+    {
+      nombre: "Rachel",
+      edad: 30,
+      esFamiliar: true,
+    },
+  ];
+  
+  const admitirPaso2 = (persona) =>{
+      if(persona.edad >= 18 && persona.esFamiliar==true){
+          console.log(` ${persona.nombre}`);
+      
+      }
+  };
+  
+  ejercicio2.forEach((persona)=>{
+       admitirPaso2(persona);
+  
+   });*/
+
+//SERIE FIBONACCI
+function serie(){
+let limit = 50;
+ a = 0;
+ b = 1;
+ let suma;
+ console.log(1);
+ 
+do {
+    suma = a + b;
+    console.log(suma);
+       a=b;
+       b=suma;
+
+    
+} while (limit);
+}
+
+console.log(serie());
+
+
+
+  
 
 
 
