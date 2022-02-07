@@ -127,7 +127,7 @@ console.log(esMayor(persona1.edad));
 
 //EJERCICIOS
 
-const ejercicio1 = [ 3, 100, 85, 64, 46, 39, 40, 30, 20, 24, 25, 6, 10, 54, 82, 71, 67, 77, 17, 29,
+/*const ejercicio1 = [ 3, 100, 85, 64, 46, 39, 40, 30, 20, 24, 25, 6, 10, 54, 82, 71, 67, 77, 17, 29,
     19, 88, 456, 13, 23, 24, 15];
 
 const numeroPrimo = (numero) =>{
@@ -147,13 +147,13 @@ const numeroPrimo = (numero) =>{
 
 ejercicio1.forEach((numero) =>{
     numeroPrimo(numero);
-});
+});*/
 
 
 
 // EJERCICO 2
-/*
-const ejercicio2 = [
+
+/*const ejercicio2 = [
     {
       nombre: "Gabriel",
       edad: 22,
@@ -185,7 +185,7 @@ const ejercicio2 = [
       esFamiliar: true,
     },
   ];
-  
+  //SEGUNDO EJERCICIO
   const admitirPaso2 = (persona) =>{
       if(persona.edad >= 18 && persona.esFamiliar==true){
           console.log(` ${persona.nombre}`);
@@ -199,21 +199,25 @@ const ejercicio2 = [
    });*/
 
 //SERIE FIBONACCI
+
 function serie(){
-let limit = 50;
+let aux=0;
  a = 0;
  b = 1;
  let suma;
  console.log(1);
  
 do {
+    
     suma = a + b;
     console.log(suma);
        a=b;
        b=suma;
+       aux = aux+1;
 
     
-} while (limit);
+} while (aux<=50);
+console.log(aux);
 }
 
 console.log(serie());
